@@ -1,0 +1,89 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ecdfdf;
+}
+.social-icon ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+}
+.social-icon ul li{
+    list-style: none;
+}
+.social-icon ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    background: #ffffff;
+    padding: 14px 20px;
+    border-radius: 10px;
+    color: #262626;
+    display: inline-block;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    transition: .3s;
+    box-shadow: -20px 20px 10px rgba(0,0,0, .5);
+}
+.social-icon ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transition: .5s;
+    transform: rotate(0deg) skew(-45deg);
+    border-radius: 6px;
+}
+.social-icon ul li a span{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.social-icon ul li a:hover{
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+}
+.social-icon ul li:hover:nth-child(1) a{
+    background: #3d5998;
+    color: #FFF;
+}
+.social-icon ul li:hover:nth-child(1) a::before{
+    background: #365492;
+}
+.social-icon ul li:hover:nth-child(2) a{
+    background: #00aced;
+    color: #FFF;
+}
+.social-icon ul li:hover:nth-child(2) a::before{
+    background: #097aa5;
+}
+.social-icon ul li:hover:nth-child(3) a{
+    background: #0A66C2;
+    color: #FFF;
+}
+.social-icon ul li:hover:nth-child(3) a::before{
+    background: #0758aa;
+}
+.social-icon ul li:hover:nth-child(4) a{
+    background: #c3cacd;
+    color: #453f3f;
+}
+.social-icon ul li:hover:nth-child(4) a::before{
+    background: #b3b8bb;
+}
+.social-icon ul li:hover:nth-child(5) a{
+    background: #E0225A;
+    color: #FFF;
+}
+.social-icon ul li:hover:nth-child(5) a::before{
+    background: #dd104e;
+}
